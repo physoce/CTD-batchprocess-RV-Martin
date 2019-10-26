@@ -1,6 +1,7 @@
 *.PNG
 *.png
-*.cnv
-*.ros
-*.asc
-*.btl
+CTD_batch_processing/*.cnv
+CTD_batch_processing/*.ros
+CTD_batch_processing/*.asc
+CTD_batch_processing/*.btl
+CTD_batch_processing/*.hdr

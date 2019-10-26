@@ -3,9 +3,9 @@ filter /iCTD_batch_processing\*_raw.cnv /pCTD_batch_processing\Filter.psa /oCTD_
 alignctd /iCTD_batch_processing\*_filter.cnv /pCTD_batch_processing\AlignCTD.psa /oCTD_batch_processing
 celltm /iCTD_batch_processing\*_align.cnv /pCTD_batch_processing\CellTm.psa /oCTD_batch_processing
 loopedit /iCTD_batch_processing\*_tmass.cnv /pCTD_batch_processing\LoopEdit.psa /oCTD_batch_processing
-derive /iCTD_batch_processing\*_loop.cnv /pCTD_batch_processing\Derive.psa /oCTD_batch_processing
+derive /iCTD_batch_processing\*_loop.cnv /c%2 /pCTD_batch_processing\Derive.psa /oCTD_batch_processing
 binavg /iCTD_batch_processing\*_derive.cnv /pCTD_batch_processing\BinAvg.psa /oCTD_batch_processing
 asciiout /iCTD_batch_processing\*_binavg.cnv /pCTD_batch_processing\ASCII_OUT.psa /oCTD_batch_processing
-bottlesum /iCTD_batch_processing\*_raw.ros /pCTD_batch_processing\BottleSum.psa /oCTD_batch_processing
+bottlesum /iCTD_batch_processing\*_raw.ros /c%2 /pCTD_batch_processing\BottleSum.psa /oCTD_batch_processing
 
 
