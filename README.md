@@ -5,7 +5,7 @@
 Tom Connolly - tconnolly@mlml.calstate.edu
 October 26, 2019
 
-Template for batch processing Seabird CTD data from the R/V John H. Martin. Includes example data from survey conducted near the head of Monterey Submarine Canyon conducted on September 24, 2019 (Physical Oceanography class cruise). 
+Template for batch processing Seabird CTD data from the R/V John H. Martin. Includes example data from survey conducted near the head of Monterey Submarine Canyon conducted on September 24, 2019 (Physical Oceanography class cruise).
 
 Runs on Windows. Seabird Data Processing must be installed.
 
@@ -17,8 +17,10 @@ Open the Windows command prompt, navigate to the main directory that contains ba
 
 `SBEbatch batch.txt DATA_DIR CON_FILE`
 
-* Replace DATA_DIR with the path to the directory that contains the raw .hex files.
-* Replace CON_FILE with the path to the configuration file to be used. Include both the path and the file name.
+* Replace `DATA_DIR` with the path to the directory that contains the raw .hex files.
+* Replace `CON_FILE` with the path to the configuration file to be used. Include both the path and the file name.
+
+The processed files and all intermediate .cnv files will be created in the `CTD_batch_processing` directory.
 
 #### Example
 
